@@ -1,0 +1,23 @@
+version = 1
+
+# Moved from openaccountants/openaccountants evidence/ on 2026-11-17; same licences.
+# When a file matches more than one block, the LAST matching block wins.
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Glimpse Ltd"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+[[annotations]]
+path = "research/**"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Glimpse Ltd and Open Accountants contributors"
+SPDX-License-Identifier = "LicenseRef-OA-Guide-License-2.0"
+
+# Exact statutory API data and generated readers retain their source licence.
+[[annotations]]
+path = "ledgers/svalbard-beneficial-owners-20261031/api-sources/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Stiftelsen Lovdata; source Norwegian legislative authorities"
+SPDX-License-Identifier = "NLOD-2.0"
